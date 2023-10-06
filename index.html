@@ -14,79 +14,14 @@
     <style>
     @import
     url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=VT323&display=swap");
-    
-    :root {
-      --displayfont: "Modak", cursive;
-      --monofont: "VT323", cursive;
-      --bodyfont: "Lyon Text", monospace;
-      --background: #f9d877;
-      --white: #9cc1c3;
-      --grey: #555;
-      --bgblack: #fff;
-      --accent: #ee6352;
-      --smallerfont: 0.7em;
-      --smallfont: 0.8em;
-      --mediumfont: 0.9em;
-      --largefont: 2.5em;
-    }
-    
-    /* -----------------------
-    
-    body styling
-    
-    ------------------------ */
-    
-    body {
-      background-color: var(--bgblack);
-      color: var(--white);
-      font-size: var(--largefont);
-      font-family: "bimbo-pro-ballpoint", sans-serif;
-      font-weight: 700;
-      font-style: normal;
-    }
+    div {
+  color: lightblue;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 12px;
+}
     </style>
     </head>
-    <body> <span class="clock"> Clock not running </span> </body>
-    <script>
-    /* -----------------------
-    
-    clock
-    
-    ------------------------ */
-    function updateTime () {
-        var zeDate = new Date();
-        var h = zeDate.getHours();
-        var m = zeDate.getMinutes();
-        var s = zeDate.getSeconds();
-        var e = "AM"
-        
-        var p = document.querySelector(".clock");
-        
-        
-        if (h > 12) {
-            h = h - 12;
-            e = "PM";
-        }
-        
-        if (h < 10) {
-            h = "" + h;
-        }
-        if (m < 10) {
-            m = "0" + m;
-        }
-        if (s < 10) {
-         s = "0" + s;
-    }
-        
-        p.textContent = h + ":" + m + ":" +  s + " " + e; 
-        
-        
-    }
-    
-    updateTime();
-    
-    setInterval(function () {
-        updateTime();
-    }, 1000);
-    </script>
+    <body> <div> under construction </div> </body>
 </html>    
